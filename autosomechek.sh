@@ -21,7 +21,7 @@ This may indicate an issue with:
 - Sample quality
 - Pipeline processing
 Please review the sample and check ${name}.chromosome_distribution.txt for detailed variant distribution."
-    echo "$email_body" | mail -s "Missing Variant Calls Alert - Sample ${name}" chase.rushton@pennmedicine.upenn.edu,akshay.chitturi@pennmedicine.upenn.edu,ashkan.bigdeli@pennmedicine.upenn.edu,david.lieberman@pennmedicine.upenn.edu
+    echo "$email_body" | mail -s "Missing Variant Calls Alert - Sample ${name}" 
 fi
 # Calculate total variants per autosome for QC report
 echo -e "Chromosome\tVariant_Count" > ${name}.chromosome_distribution.txt

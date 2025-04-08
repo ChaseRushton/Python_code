@@ -21,10 +21,7 @@ def count_variants(vcf_file, chromosome):
 def send_email_alert(name, missing_chromosomes):
     """Send email alert about missing variants"""
     recipients = [
-        'chase.rushton@pennmedicine.upenn.edu',
-        'akshay.chitturi@pennmedicine.upenn.edu',
-        'ashkan.bigdeli@pennmedicine.upenn.edu',
-        'david.lieberman@pennmedicine.upenn.edu'
+  
     ]
     
     missing_list = ','.join(map(str, missing_chromosomes))
